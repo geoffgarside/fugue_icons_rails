@@ -1,0 +1,3 @@
+module FugueIcons
+  # Your code goes here...
+end
