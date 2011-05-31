@@ -4,18 +4,18 @@ require "fugue_icons/version"
 
 Gem::Specification.new do |s|
   s.name        = "fugue_icons"
-  s.version     = FugueIcons::VERSION
+  s.version     = "3.0.3"
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ["Geoff Garside (Icons by Yusuke Kamiyamane)"]
+  s.email       = ["geoff.garside@m247.com"]
+  s.homepage    = "http://p.yusukekamiyamane.com/"
+  s.summary     = %q{Fugue icon set}
+  s.description = %q{Fugue icon set for use with Rails 3.1 assets}
 
-  s.rubyforge_project = "fugue_icons"
+  s.required_rubygems_version = ">= 1.3.6"
+
+  s.add_dependency "railties", "~> 3.1.0.beta1"
 
   s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 end
