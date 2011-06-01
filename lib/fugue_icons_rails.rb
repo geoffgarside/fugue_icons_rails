@@ -1,4 +1,4 @@
-module FugueIcons
+module FugueIconsRails
 
   class Engine < Rails::Engine
   end
