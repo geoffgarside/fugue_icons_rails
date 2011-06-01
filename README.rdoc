@@ -12,12 +12,19 @@ purchase a royalty-free license.
 The icons are packaged under an +icons/+ folder. So to use
 the icons in your HTML use the following
 
-    <%= image_tag("icons/anchor.png") %>
+  <%= image_tag("icons/anchor.png") %>
 
 if you need to use them in your CSS then you should use an
 ERB interpreted CSS or SCSS template such as
 
-    .anchor {
-        background-image: url(<%= asset_path("icons/anchor.png") %>);
-    }
+  .anchor {
+      background-image: url(<%= asset_path("icons/anchor.png") %>);
+  }
 
+== Attribution
+To provide a link back to the authors website a helper method is added
+to be used in your view templates. To use it simply add
+
+  <%= fugue_icons_attribution_link %>
+
+to your application layout.
