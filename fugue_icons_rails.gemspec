@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "fugue_icons_rails"
-  s.version     = "3.2.2"
+  s.version     = "3.3.0"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Geoff Garside (Icons by Yusuke Kamiyamane)"]
   s.email       = ["geoff@geoffgarside.co.uk"]
