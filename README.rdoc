@@ -9,7 +9,7 @@ purchase a royalty-free license.
 <http://p.yusukekamiyamane.com/>
 
 == Rails Usage
-The icons are packaged under an +icons/+ folder. So to use
+The icons are packaged under an +fugue-icons/+ folder. So to use
 the icons in your HTML use the following
 
   <%= image_tag("fugue-icons/anchor.png") %>
