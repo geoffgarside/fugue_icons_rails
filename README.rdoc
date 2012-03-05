@@ -12,13 +12,14 @@ purchase a royalty-free license.
 The icons are packaged under an +icons/+ folder. So to use
 the icons in your HTML use the following
 
-  <%= image_tag("icons/anchor.png") %>
+  <%= image_tag("fugue-icons/anchor.png") %>
+  <%= image_tag("fugue-icons-shadowless/anchor.png") %>
 
 if you need to use them in your CSS then you should use an
 ERB interpreted CSS or SCSS template such as
 
   .anchor {
-      background-image: url(<%= asset_path("icons/anchor.png") %>);
+      background-image: url(<%= asset_path("fugue-icons/anchor.png") %>);
   }
 
 == Attribution
