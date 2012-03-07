@@ -20,4 +20,12 @@ Gem::Specification.new do |s|
   s.files        += `git ls-files`.split("\n").reject { |p| p =~ %r{^lib/assets/images/} || p =~ %r{\.gemspec$} }
   s.files        += `git ls-files lib/assets/images/icons`.split("\n")
   s.require_paths = ["lib"]
+
+  s.post_install_message =<<-EOF
+  *** v3.3.4+ Backwards Incompatible Change ***
+  The `icons/` directory has been renamed to `fugue-icons/` so
+  inclusions of icons from this gem will need to be manually
+  updated. This has been done to avoid potential collisions
+  with other icon asset gems.
+  EOF
 end
