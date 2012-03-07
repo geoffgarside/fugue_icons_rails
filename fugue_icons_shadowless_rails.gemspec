@@ -2,14 +2,14 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
-  s.name        = "fugue_icons_rails"
+  s.name        = "fugue_icons_shadowless_rails"
   s.version     = "3.3.3"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Geoff Garside (Icons by Yusuke Kamiyamane)"]
   s.email       = ["geoff@geoffgarside.co.uk"]
   s.homepage    = "http://p.yusukekamiyamane.com/"
-  s.summary     = %q{Fugue icon set}
-  s.description = %q{Fugue icon set for use with Rails 3.1 and 3.2 assets}
+  s.summary     = %q{Fugue icon shadowless set}
+  s.description = %q{Fugue icon shadowless set for use with Rails 3.1 and 3.2 assets}
 
   s.required_rubygems_version = ">= 1.3.6"
 
@@ -18,6 +18,6 @@ Gem::Specification.new do |s|
   # Get none asset files, then include the gems specific set of asset files
   s.files         = ["#{s.name}.gemspec"]
   s.files        += `git ls-files`.split("\n").reject { |p| p =~ %r{^lib/assets/images/} || p =~ %r{\.gemspec$} }
-  s.files        += `git ls-files lib/assets/images/icons`.split("\n")
+  s.files        += `git ls-files lib/assets/images/fugue-icons-shadowless`.split("\n")
   s.require_paths = ["lib"]
 end
