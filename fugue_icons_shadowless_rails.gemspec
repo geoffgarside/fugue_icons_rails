@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "fugue_icons_shadowless_rails"
-  s.version     = "3.3.3"
+  s.version     = "3.3.4"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Geoff Garside (Icons by Yusuke Kamiyamane)"]
   s.email       = ["geoff@geoffgarside.co.uk"]
@@ -15,9 +15,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency "railties", ">= 3.1.0"
 
-  # Get none asset files, then include the gems specific set of asset files
-  s.files         = ["#{s.name}.gemspec"]
-  s.files        += `git ls-files`.split("\n").reject { |p| p =~ %r{^lib/assets/images/} || p =~ %r{\.gemspec$} }
-  s.files        += `git ls-files lib/assets/images/fugue-icons-shadowless`.split("\n")
+  s.files         = Dir["app/**/*"] + Dir['lib/assets/images/fugue-icons-shadowless/*.png'] + ["README.rdoc"]
   s.require_paths = ["lib"]
 end
