@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "railties", ">= 3.1.0"
 
-  s.files         = Dir["app/**/*"] + Dir['lib/**/*.rb'] + Dir['lib/assets/images/fugue-icons-shadowless/*.png'] + ["README.rdoc"]
+  s.files         = %w(README.rdoc lib/fugue_icons_shadowless_rails.rb) +
+                    Dir["app/**/*"] + Dir['lib/assets/images/fugue-icons-shadowless/*.png']
   s.require_paths = ["lib"]
 end
