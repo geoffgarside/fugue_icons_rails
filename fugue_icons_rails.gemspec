@@ -18,5 +18,4 @@ Gem::Specification.new do |s|
   s.files         = %w(README.rdoc lib/fugue_icons_rails.rb) +
                     Dir["app/**/*"] + Dir['vendor/assets/images/fugue-icons/*.png']
   s.require_paths = ["lib"]
-  EOF
 end
